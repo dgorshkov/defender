@@ -1,0 +1,3 @@
+- This is the source files of F-14 Tomcat, [playable on Itch.io](https://fdeth.itch.io/f-14-tomcat)
+- Done in about 20 hours total
+- Audio and visual assets ripped from several 90s games, under fair use (this is an personal-educational, non-commercial project).
