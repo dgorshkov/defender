@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2596609280684316519}
   - component: {fileID: 1021733716490766691}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -195626835
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5b62ca211466b45669e0f519fcd5a6d1, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.6666667}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2961617433418045732}
   - component: {fileID: 2174882466270140452}
   - component: {fileID: 4040261284016628724}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,8 +154,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1330597001
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5b62ca211466b45669e0f519fcd5a6d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -183,14 +183,22 @@ MonoBehaviour:
   moveSpeedX: 6
   moveSpeedY: 4
   minMaxPadding: 0.3
-  startingHealth: 500
+  startingHealth: 100
   health: 0
   laserPrefab: {fileID: 1968853261287997426, guid: be22d3689535842aab7ea7488e490fa4, type: 3}
-  laserSpeed: 10
-  laserFiringPeriod: 0.2
+  laserSpeed: 6
+  laserFiringPeriod: 0.6
+  laserSalvoDelay: 0.1
+  rocketPrefab: {fileID: 1968853261287997426, guid: 08d9930fb365142e19ec96ee140e1388, type: 3}
+  rocketSpeed: 5
+  startingRockets: 2
+  currentRockets: 0
   deathEffectPrefab: {fileID: 5383813401331556445, guid: 66aa2a03ef9264ad08bae4e8ae27c820, type: 3}
-  attackSound: {fileID: 8300000, guid: c479e692cefbc402ea8002680a0ea9b8, type: 3}
-  deathSound: {fileID: 8300000, guid: 083675f18a2ab4d43af7d44588cdb9a6, type: 3}
+  attackSound: {fileID: 8300000, guid: bd9353efa97654cbf9452430fc8af8df, type: 3}
+  secondaryAttackSound: {fileID: 8300000, guid: 34cb5734e96e3459ba5c694e5fd1815f, type: 3}
+  pickupSound: {fileID: 8300000, guid: 3a2f94eb9743d4f0e938674d370f0b7f, type: 3}
+  damageSound: {fileID: 8300000, guid: cbc539a4533ce4cb6bdecfb16bedd890, type: 3}
+  deathSound: {fileID: 8300000, guid: f47322999be2742409c9c0ba3489c8c9, type: 3}
 --- !u!58 &2174882466270140452
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -201,7 +209,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0010944605, y: 0}

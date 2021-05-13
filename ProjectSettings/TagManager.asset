@@ -8,14 +8,14 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Powerups
   - Water
   - UI
   - Player
   - Enemies
   - Player Projectiles
   - Enemy Projectiles
-  - 
+  - Clouds
   - 
   - 
   - 
@@ -38,12 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: fg +1
+    uniqueID: 4174037985
     locked: 0
-  - name: bg
-    uniqueID: 4099340461
+  - name: fg -1
+    uniqueID: 2823124167
     locked: 0
   - name: fg
     uniqueID: 2964370295
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: bg +1
+    uniqueID: 2692099643
+    locked: 0
+  - name: bg
+    uniqueID: 4099340461
     locked: 0

@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class EnemyPathing : MonoBehaviour
 {
-    WaveConfig waveConfig;
-    List<Transform> waypoints;
-    int waypointIndex = 0;
+    private WaveConfig waveConfig;
+    private List<Transform> waypoints;
+    private int waypointIndex = 0;
 
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         waypoints = waveConfig.GetWaypoints();
         transform.position = waypoints[waypointIndex].transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         FollowWaypoints();
     }
